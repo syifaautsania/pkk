@@ -1,0 +1,90 @@
+body {
+  background-image: url("https://i.pinimg.com/736x/ec/e7/1a/ece71afe5b532798662bcb35b8b132dc.jpg");
+  background-size: cover;
+}
+.nav-header {
+ background-color: #FFB9B9; 
+ position: fixed;
+ width: 100%;
+ z-index: 100;
+}
+
+
+.hidden {
+  display: none;
+  width: 300px;
+  z-index: 101;
+}
+
+
+#judul {
+  color: #594100;
+}
+
+#slogan {
+  display: flex;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  color: #594100;
+  text-shadow: 2px 4px 2px rgb(165, 128, 128);
+}
+.products {
+  flex: 3;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.product-card article {
+  background-color: rgb(243, 203, 243);
+  color: #594100;
+  box-shadow: 4px 4px 10px rgb(177, 63, 97);
+  margin: 15px;
+}
+
+.product-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.product-card .container-button {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cart {
+  flex: 1;
+   background-color: #ff6b6b;
+  color: white;
+  padding: 20px;
+  margin: 40px;
+  border-radius: 5px;
+  position: sticky;
+  top: 20px;
+  height: fit-content;
+  box-shadow: 5px 5px 10px rgb(177, 63, 97);
+}
+
+.product-card .container-button {
+  display: flex;
+  justify-content: space-between;
+}
+
+button:hover {
+  opacity: 0.5;
+}
+
+.sosmed{
+  width: 100%;
+  height: 100px;
+  background-color: #FFB9B9;
+  margin-top: 150px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-weight: bold;
+}
+
+.sosmed img{
+  width: 30px;
+}
