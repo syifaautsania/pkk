@@ -138,7 +138,7 @@ function checkoutToWhatsapp(){
     pesan += `${produk.name} x ${produk.qty} \n`
 });
 
-  window.open(`https://wa.me/628967147977?text=${pesan}`);
+  window.open(`https://wa.me/6289671479778?text=${pesan}`);
 }
 
 
