@@ -125,7 +125,14 @@ cart.forEach((item) => {
 
   cart_items.append(items);
 });
+const total = cart.reduce((sum, item) => sum + (item.price * item.qty), 0);
+const totalElement = document.createElement("div");
+totalElement.style.marginTop = "20px";
+totalElement.style.fontWeight = "bold";
 
+totalElement.innerHTML = `Total Pesanan : Rp. ${total.toLocaleString()}`;
+cart_items.append(totalElement);
+  
 const buttonCheckout = document.createElement("button");
 buttonCheckout.innerText = "Checkout Via Whatsapp";
 buttonCheckout.onclick = checkoutToWhatsapp;
@@ -134,8 +141,8 @@ cart_items.append(buttonCheckout);
 }
 function checkoutToWhatsapp(){
   let pesan = "Halo, saya mau beli ";
-  cart.forEach( (produk) =>{
-    pesan += `${produk.name} x ${produk.qty} \n`
+  cart.forEach( (produk, index) =>{
+    pesan += `${index + 1}. ${produk.name} x ${produk.qty} \n`
 });
 
   window.open(`https://wa.me/6289671479778?text=${pesan}`);
