@@ -159,7 +159,7 @@ function checkoutToWhatsapp(){
 
     items.innerHTML = `
     <h6> ${produk_di_keranjang.name} </h6>
-    <p>${produk_di_keranjang.price.toLocaleString()} x ${produk_di_keranjang.qty}</p>
+    <p>${produk_di_keranjang.price.toLocaleString()} x ${produk_di_keranjang.qty} pcs</p>
     <p>Total : ${(produk_di_keranjang.price * produk_di_keranjang.qty).toLocaleString()} </p>
     `;
 
